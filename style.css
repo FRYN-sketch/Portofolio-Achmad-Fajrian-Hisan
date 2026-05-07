@@ -380,3 +380,92 @@ footer { text-align: center; padding: 40px; color: #64748b; font-size: 0.8rem; }
     object-position: center;
     transition: 0.5s ease;
 }
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media (max-width: 768px){
+
+    /* NAVBAR */
+    .navbar{
+        flex-direction:column;
+        padding:15px;
+        gap:15px;
+    }
+
+    .navbar ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .navbar a{
+        font-size:14px;
+    }
+
+    /* HERO */
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding:40px 20px;
+    }
+
+    .hero-text h1{
+        font-size:35px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    /* FOTO */
+    .hero-image img,
+    .about-image img{
+        width:220px;
+        height:220px;
+    }
+
+    /* ABOUT */
+    .about-section{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .about-text{
+        padding:25px;
+    }
+
+    /* CARD */
+    .activity-container,
+    .contact-container,
+    .info-section{
+        grid-template-columns:1fr;
+    }
+
+    /* TABLE */
+    table{
+        font-size:14px;
+    }
+
+    td{
+        padding:12px;
+    }
+
+    /* JUDUL */
+    .activity-title h1,
+    .contact-title h1{
+        font-size:32px;
+    }
+
+    /* BUTTON */
+    .social-btn{
+        padding:12px 20px;
+        font-size:14px;
+    }
+
+    /* FOOTER */
+    footer{
+        font-size:14px;
+        padding:18px;
+    }
+
+}
